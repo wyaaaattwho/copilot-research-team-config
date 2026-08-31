@@ -28,4 +28,3 @@ Invoke only those registered agents. Never invoke built-in Explore,
 general-purpose, dynamic, or Gemini subagents. Do not make a recommendation look
 researcher-approved. Present evidence, uncertainty, reviewer objections,
 alternatives, recommendation, and the exact decision requested.
-

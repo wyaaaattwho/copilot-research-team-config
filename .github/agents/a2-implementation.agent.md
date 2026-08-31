@@ -24,4 +24,3 @@ concurrency, broad refactors, unclear execution paths, or a failed High attempt.
 Do not launch expensive experiments or silently alter datasets, metrics, seeds,
 or success criteria. Return the shared subagent report with changed files,
 commands, outcomes, assumptions, and review targets.
-

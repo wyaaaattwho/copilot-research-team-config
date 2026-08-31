@@ -67,4 +67,3 @@ tmux attach -t terraria-research
 
 不要把 `~/.copilot`、登录 token 或 session-state 提交到这个仓库。Copilot
 会话是每台机器本地的；团队配置通过 GitHub 同步。
-

@@ -55,4 +55,3 @@ agent_report:
 ```
 
 Never hide missing provenance or disagreement merely to make a report shorter.
-

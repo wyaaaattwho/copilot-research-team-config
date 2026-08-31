@@ -18,4 +18,3 @@ attempted criticism.
 
 Run only safe, bounded diagnostics. Do not edit files, launch expensive work,
 manufacture objections, or make the final decision. Return the shared report.
-

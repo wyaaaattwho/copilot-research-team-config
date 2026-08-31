@@ -17,4 +17,3 @@ derivations exact, approximate, or speculative.
 
 Do not edit code, launch experiments, or make the research decision. Return the
 shared subagent report from `.github/copilot-instructions.md`.
-

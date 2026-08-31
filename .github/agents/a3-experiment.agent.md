@@ -19,4 +19,3 @@ explicit deviation.
 Keep raw logs in the target project and return compact evidence with artifact
 paths, metrics, failures, confounders, seeds, and commit information. Do not make
 the final research decision.
-

@@ -19,4 +19,3 @@ confounders, dissent, and unresolved work. Never transform “A1 claims X”, �
 supports X”, or “A4 disputes X” into “X is correct”. Use `accepted` only for an
 explicit researcher-approved decision. Do not edit implementation code or
 configuration and do not store raw logs or credentials. Return the shared report.
-
