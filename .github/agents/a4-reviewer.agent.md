@@ -3,7 +3,7 @@ name: a4-reviewer
 description: Independently attack code, experiments, and conclusions for correctness, leakage, confounding, weak controls, and missing evidence.
 tools: [read, search, web, execute]
 agents: []
-model: Claude Opus 5
+model: Gemini 3.7 Flash
 user-invocable: false
 disable-model-invocation: false
 ---

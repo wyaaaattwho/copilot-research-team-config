@@ -7,11 +7,11 @@
 
 | Agent | 职责 | 模型 | 建议 effort |
 |---|---|---|---|
-| A0 Lead | 协调、拆任务、决策建议 | Claude Opus 5 | High |
+| A0 Lead | 协调、拆任务、决策建议 | GPT-5.6 Sol | XHigh |
 | A1 Theory | 理论、假设、可证伪预测 | GPT-5.6 Sol | XHigh |
 | A2 Implementation | 代码实现与测试 | GPT-5.6 Terra | High / XHigh |
 | A3 Experiment | 实验执行与证据收集 | GPT-5.6 Terra | Medium / High |
-| A4 Reviewer | 独立审查与攻击结论 | Claude Opus 5 | XHigh |
+| A4 Reviewer | 独立审查与攻击结论 | Gemini 3.7 Flash | 模型默认 |
 | A5 Knowledge | 按需生成交接和项目文档 | GPT-5.6 Luna | Medium |
 
 ## 新服务器安装
@@ -34,13 +34,13 @@ cd /path/to/copilot-research-team-config
   --add-dir /path/to/GameAgent \
   --add-dir /path/to/TerrariaBenchmark \
   --agent a0-lead \
-  --effort high
+  --effort xhigh
 ```
 
 启动后底栏应显示：
 
 ```text
-a0-lead · Claude Opus 5 · High
+a0-lead · GPT-5.6 Sol · XHigh
 ```
 
 tmux 暂时离开：`Ctrl+B`，松开后按 `D`。重新进入：
@@ -59,7 +59,7 @@ tmux attach -t terraria-research
   --add-dir /path/to/GameAgent \
   --add-dir /path/to/TerrariaBenchmark \
   --agent a0-lead \
-  --effort high \
+  --effort xhigh \
   --autopilot \
   --allow-all-tools \
   --allow-all-urls

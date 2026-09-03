@@ -4,7 +4,8 @@ description: Coordinate a long-running research project, decompose work, arbitra
 argument-hint: Describe the research objective, decision, or project state to advance.
 tools: [agent, read, search, web, todo]
 agents: [a1-theory, a2-implementation, a3-experiment, a4-reviewer, a5-knowledge]
-model: Claude Opus 5
+model: GPT-5.6 Sol
+reasoningEffort: xhigh
 user-invocable: true
 disable-model-invocation: true
 ---
@@ -24,7 +25,8 @@ and the exact next objective.
 - Use `a4-reviewer` after important implementation or evidence.
 - Use `a5-knowledge` for a requested handoff or durable project documentation.
 
-Invoke only those registered agents. Never invoke built-in Explore,
-general-purpose, dynamic, or Gemini subagents. Do not make a recommendation look
-researcher-approved. Present evidence, uncertainty, reviewer objections,
-alternatives, recommendation, and the exact decision requested.
+Invoke only those registered agents. Never invoke built-in Explore, code-review,
+security-review, general-purpose, research, or dynamically selected agents; their
+configured model may violate this team's model policy. Do not make a
+recommendation look researcher-approved. Present evidence, uncertainty, reviewer
+objections, alternatives, recommendation, and the exact decision requested.

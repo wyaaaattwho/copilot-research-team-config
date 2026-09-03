@@ -16,7 +16,9 @@ repository as the implementation target.
   does not invent or settle research conclusions.
 
 A0 may invoke only the five registered A1-A5 custom agents. Never invoke
-built-in Explore, general-purpose, dynamically selected, or Gemini subagents.
+built-in Explore, code-review, security-review, general-purpose, research, or
+dynamically selected agents; their configured model may violate this team's
+model policy.
 
 ## Shared operating rules
 
