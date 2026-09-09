@@ -7,11 +7,11 @@
 
 | Agent | 职责 | 模型 | 建议 effort |
 |---|---|---|---|
-| A0 Lead | 协调、拆任务、决策建议 | GPT-5.6 Sol | XHigh |
+| A0 Lead | 目标、调度、集成与交付 | GPT-6 Astra | High |
 | A1 Theory | 理论、假设、可证伪预测 | GPT-5.6 Sol | XHigh |
-| A2 Implementation | 代码实现与测试 | GPT-5.6 Terra | High / XHigh |
+| A2 Implementation | 代码实现与测试 | GPT-6 Astra | Medium / High |
 | A3 Experiment | 实验执行与证据收集 | GPT-5.6 Terra | Medium / High |
-| A4 Reviewer | 独立审查与攻击结论 | Gemini 3.7 Flash | 模型默认 |
+| A4 Reviewer | 重大节点收尾或持续错误审查 | Gemini 3.7 Flash | 模型默认 |
 | A5 Knowledge | 按需生成交接和项目文档 | GPT-5.6 Luna | Medium |
 
 ## 新服务器安装
@@ -33,14 +33,15 @@ cd /path/to/copilot-research-team-config
   -C "$PWD" \
   --add-dir /path/to/GameAgent \
   --add-dir /path/to/TerrariaBenchmark \
-  --agent a0-lead \
-  --effort xhigh
+  --model gpt-6-astra \
+  --effort high \
+  --agent a0-lead
 ```
 
 启动后底栏应显示：
 
 ```text
-a0-lead · GPT-5.6 Sol · XHigh
+a0-lead · GPT-6 Astra · High
 ```
 
 tmux 暂时离开：`Ctrl+B`，松开后按 `D`。重新进入：
@@ -58,8 +59,9 @@ tmux attach -t terraria-research
   -C "$PWD" \
   --add-dir /path/to/GameAgent \
   --add-dir /path/to/TerrariaBenchmark \
+  --model gpt-6-astra \
+  --effort high \
   --agent a0-lead \
-  --effort xhigh \
   --autopilot \
   --allow-all-tools \
   --allow-all-urls
