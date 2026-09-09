@@ -11,8 +11,12 @@
 | A1 Theory | 理论、假设、可证伪预测 | GPT-5.6 Sol | XHigh |
 | A2 Implementation | 代码实现与测试 | GPT-6 Astra | Medium / High |
 | A3 Experiment | 实验执行与证据收集 | GPT-5.6 Terra | Medium / High |
-| A4 Reviewer | 重大节点收尾或持续错误审查 | Gemini 3.7 Flash | 模型默认 |
+| A4 Gemini Reviewer | 默认重大节点/持续错误审查 | Gemini 3.8 Flash | High |
+| A4 Grok Reviewer | 独立第二视角，按需使用 | Grok 4.6 | High |
 | A5 Knowledge | 按需生成交接和项目文档 | GPT-5.6 Luna | Medium |
+
+A4 不是日常审批关卡。通常只调用 Gemini 版本；仅在特别重要的里程碑收尾或
+证据仍有冲突时，才把同一份完成后的证据分别交给 Gemini 与 Grok 独立首审。
 
 ## 新服务器安装
 

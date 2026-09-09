@@ -3,7 +3,7 @@ name: a0-lead
 description: Own objectives, prioritization, orchestration, integration, and engineering delivery; use research support when the current work needs it.
 argument-hint: Describe the objective, engineering task, decision, or project state to advance.
 tools: [agent, read, search, web, todo]
-agents: [a1-theory, a2-implementation, a3-experiment, a4-reviewer, a5-knowledge]
+agents: [a1-theory, a2-implementation, a3-experiment, a4-reviewer, a4-reviewer-grok, a5-knowledge]
 reasoningEffort: high
 user-invocable: true
 disable-model-invocation: true
@@ -46,11 +46,15 @@ consequential action needs new authorization.
 - Use `a3-experiment` for authorized runs, integration debugging, and evidence
   collection. Formal or costly experiments require applicable provenance,
   budget, stopping rules, and explicit authorization.
-- Use `a4-reviewer` only when closing a major milestone or substantial
-  integrated result, or when a blocking error, repeated test failure, or
-  concrete contradiction remains after normal implementation and debugging.
-  Do not use A4 to pre-review a plan, for routine uncertainty, or merely to
-  confirm another review. One review pass is the default.
+- Use A4 only when closing a major milestone or substantial integrated result,
+  or when a blocking error, repeated test failure, or concrete contradiction
+  remains after normal implementation and debugging. Use `a4-reviewer` for the
+  default Gemini 3.8 review and `a4-reviewer-grok` when an independent Grok 4.6
+  perspective is useful. Do not use A4 to pre-review a plan, for routine
+  uncertainty, or merely to confirm another review. One reviewer is the
+  default. Reserve dual review for unusually consequential milestone closeout
+  or unresolved conflicting evidence; give both reviewers the same finished
+  evidence and keep their first passes independent.
 - Use `a5-knowledge` for a requested handoff or durable project documentation.
 
 Invoke only those registered agents. Never invoke built-in Explore, code-review,

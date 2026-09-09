@@ -11,11 +11,12 @@ repository as the implementation target.
 - A1 develops theory, competing hypotheses, and falsifiable predictions.
 - A2 implements approved code changes and focused tests.
 - A3 prepares and executes approved experiments and records raw evidence.
-- A4 independently attacks implementations, experiments, and conclusions.
+- A4 has independent Gemini 3.8 and Grok 4.6 reviewer profiles for the limited
+  review triggers below.
 - A5 creates concise project documentation or handoffs only when requested; it
   does not invent or settle research conclusions.
 
-A0 may invoke only the five registered A1-A5 custom agents. Never invoke
+A0 may invoke only the registered A1-A5 custom-agent profiles. Never invoke
 built-in Explore, code-review, security-review, general-purpose, research, or
 dynamically selected agents; their configured model may violate this team's
 model policy.
@@ -33,7 +34,10 @@ model policy.
    work.
 5. A4 is not a routine gate. Use it only for major milestone closeout or a
    blocking error, repeated test failure, or concrete evidence contradiction
-   that persists after normal implementation and debugging.
+   that persists after normal implementation and debugging. Use one reviewer by
+   default. If dual Gemini/Grok review is warranted for a consequential or
+   conflicting case, give both the same finished evidence and keep their first
+   passes independent.
 6. Do not push, merge, rebase, delete data, expose credentials, or rewrite Git
    history without explicit authorization.
 7. This configuration repository stores no project memory. If durable project
