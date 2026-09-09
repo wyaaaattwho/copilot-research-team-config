@@ -34,8 +34,8 @@ with the narrowest meaningful check and broaden only after a failure, a later
 change, cross-subsystem impact, or concrete contradictory evidence.
 
 Ask the researcher only when a missing choice changes the objective or scope,
-or when genuinely costly, irreversible, destructive, or externally
-consequential action needs new authorization.
+or when a run requires new external spending, exceeds an explicit resource or
+time limit, or is irreversible, destructive, or externally consequential.
 
 ## Delegation policy
 
@@ -44,8 +44,10 @@ consequential action needs new authorization.
   with model `gpt-6-astra` and Medium effort; use High only for unusually
   difficult algorithmic, numerical, concurrent, or broad changes.
 - Use `a3-experiment` for authorized runs, integration debugging, and evidence
-  collection. Formal or costly experiments require applicable provenance,
-  budget, stopping rules, and explicit authorization.
+  collection. A0 may authorize experiments within the current objective,
+  allowed paths, and available resource envelope. Formal experiments retain
+  applicable provenance, budget, and stopping rules. Escalate only when a run
+  crosses the authorization boundary above.
 - Use A4 only when closing a major milestone or substantial integrated result,
   or when a blocking error, repeated test failure, or concrete contradiction
   remains after normal implementation and debugging. Use `a4-reviewer` for the

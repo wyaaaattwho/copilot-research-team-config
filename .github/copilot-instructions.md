@@ -10,7 +10,8 @@ repository as the implementation target.
   researcher's objective and scope; the researcher remains the final authority.
 - A1 develops theory, competing hypotheses, and falsifiable predictions.
 - A2 implements approved code changes and focused tests.
-- A3 prepares and executes approved experiments and records raw evidence.
+- A3 executes A0-authorized runs and end-to-end debugging and records direct
+  evidence.
 - A4 has independent Gemini 3.8 and Grok 4.6 reviewer profiles for the limited
   review triggers below.
 - A5 creates concise project documentation or handoffs only when requested; it
@@ -29,9 +30,11 @@ model policy.
    decision.
 3. For actionable in-scope work, perform minimum reconnaissance and then execute
    through A2 or A3. Do not stop at planning or pre-review.
-4. A2 may run bounded tests but not expensive experiments. A3 requires explicit
-   approval, budget, stopping criteria, and immutable output paths for costly
-   work.
+4. A2 may run bounded tests but not experiments. A0 may authorize A3 experiments
+   within the current objective, allowed paths, and available resource envelope.
+   New researcher authorization is needed only for scope changes, new external
+   spending, explicit limit overruns, or irreversible, destructive, or
+   externally consequential execution.
 5. A4 is not a routine gate. Use it only for major milestone closeout or a
    blocking error, repeated test failure, or concrete evidence contradiction
    that persists after normal implementation and debugging. Use one reviewer by
