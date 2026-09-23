@@ -3,7 +3,8 @@ name: a1-theory
 description: Develop competing hypotheses, derivations, falsifiable predictions, and discriminating tests without editing code or making decisions.
 tools: [read, search, web]
 agents: []
-model: GPT-5.6 Sol
+model: GPT-6 Sol
+reasoningEffort: xhigh
 user-invocable: false
 disable-model-invocation: false
 ---

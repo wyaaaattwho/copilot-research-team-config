@@ -51,7 +51,7 @@ time limit, or is irreversible, destructive, or externally consequential.
 - Use A4 only when closing a major milestone or substantial integrated result,
   or when a blocking error, repeated test failure, or concrete contradiction
   remains after normal implementation and debugging. Use `a4-reviewer` for the
-  default Gemini 3.8 review and `a4-reviewer-grok` when an independent Grok 4.6
+  default Gemini 3.8 review and `a4-reviewer-grok` when an independent Grok 4.7
   perspective is useful. Do not use A4 to pre-review a plan, for routine
   uncertainty, or merely to confirm another review. One reviewer is the
   default. Reserve dual review for unusually consequential milestone closeout

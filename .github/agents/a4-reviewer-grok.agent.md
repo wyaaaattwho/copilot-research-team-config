@@ -3,7 +3,7 @@ name: a4-reviewer-grok
 description: Independently review a finished major milestone or investigate a persistent blocking error or evidence contradiction when A0 selects Grok review.
 tools: [read, search, web, execute]
 agents: []
-model: Grok 4.6
+model: Grok 4.7
 reasoningEffort: high
 user-invocable: false
 disable-model-invocation: false

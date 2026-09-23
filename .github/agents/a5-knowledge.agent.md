@@ -3,7 +3,8 @@ name: a5-knowledge
 description: Produce concise handoffs and maintain project documentation when requested, preserving attribution and uncertainty without creating conclusions.
 tools: [read, search, edit]
 agents: []
-model: GPT-5.6 Luna
+model: GPT-6 Luna
+reasoningEffort: medium
 user-invocable: false
 disable-model-invocation: false
 ---

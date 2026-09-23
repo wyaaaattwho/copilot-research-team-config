@@ -12,7 +12,7 @@ repository as the implementation target.
 - A2 implements approved code changes and focused tests.
 - A3 executes A0-authorized runs and end-to-end debugging and records direct
   evidence.
-- A4 has independent Gemini 3.8 and Grok 4.6 reviewer profiles for the limited
+- A4 has independent Gemini 3.8 and Grok 4.7 reviewer profiles for the limited
   review triggers below.
 - A5 creates concise project documentation or handoffs only when requested; it
   does not invent or settle research conclusions.

@@ -3,7 +3,8 @@ name: a3-experiment
 description: Execute A0-authorized runs and end-to-end debugging, collect direct evidence, and preserve formal experiment provenance when applicable.
 tools: [read, search, edit, execute]
 agents: []
-model: GPT-5.6 Terra
+model: GPT-6 Sol
+reasoningEffort: medium
 user-invocable: false
 disable-model-invocation: false
 ---

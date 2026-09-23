@@ -14,12 +14,12 @@ and requests adversarial review only when it is useful.
 | Role | Responsibility | Default model | Effort |
 |---|---|---|---|
 | A0 Lead | Objectives, prioritization, delegation, integration, and delivery | GPT-6 Astra | High |
-| A1 Theory | Research, mechanisms, competing hypotheses, and difficult diagnosis | GPT-5.6 Sol | XHigh |
+| A1 Theory | Research, mechanisms, competing hypotheses, and difficult diagnosis | GPT-6 Sol | XHigh |
 | A2 Implementation | Bounded code changes, repairs, and focused tests | GPT-6 Astra | Medium; High for difficult work |
-| A3 Experiment | Runs, integration debugging, experiments, and direct evidence | GPT-5.6 Terra | Medium; High for difficult diagnosis |
+| A3 Experiment | Runs, integration debugging, experiments, and direct evidence | GPT-6 Sol | Medium |
 | A4 Gemini Reviewer | Default independent review for major milestones or persistent failures | Gemini 3.8 Flash | High |
-| A4 Grok Reviewer | Optional independent second perspective | Grok 4.6 | High |
-| A5 Knowledge | Requested handoffs and concise project documentation | GPT-5.6 Luna | Medium |
+| A4 Grok Reviewer | Optional independent second perspective | Grok 4.7 | High |
+| A5 Knowledge | Requested handoffs and concise project documentation | GPT-6 Luna | Medium |
 
 Model availability depends on your Copilot plan and organization policy. If a
 declared agent model is unavailable, Copilot CLI may fall back to the active
