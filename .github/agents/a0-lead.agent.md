@@ -41,8 +41,7 @@ time limit, or is irreversible, destructive, or externally consequential.
 
 - Use `a1-theory` for research, mechanisms, design, and difficult diagnosis.
 - Use `a2-implementation` for bounded implementation or repair. Dispatch it
-  with model `gpt-6-astra` and Medium effort; use High only for unusually
-  difficult algorithmic, numerical, concurrent, or broad changes.
+  with model `gpt-6-sol` and fixed High effort.
 - Use `a3-experiment` for authorized runs, integration debugging, and evidence
   collection. A0 may authorize experiments within the current objective,
   allowed paths, and available resource envelope. Formal experiments retain

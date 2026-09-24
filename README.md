@@ -15,7 +15,7 @@ and requests adversarial review only when it is useful.
 |---|---|---|---|
 | A0 Lead | Objectives, prioritization, delegation, integration, and delivery | GPT-6 Astra | High |
 | A1 Theory | Research, mechanisms, competing hypotheses, and difficult diagnosis | GPT-6 Sol | XHigh |
-| A2 Implementation | Bounded code changes, repairs, and focused tests | GPT-6 Astra | Medium; High for difficult work |
+| A2 Implementation | Bounded code changes, repairs, and focused tests | GPT-6 Sol | High |
 | A3 Experiment | Runs, integration debugging, experiments, and direct evidence | GPT-6 Sol | Medium |
 | A4 Gemini Reviewer | Default independent review for major milestones or persistent failures | Gemini 3.8 Flash | High |
 | A4 Grok Reviewer | Optional independent second perspective | Grok 4.7 | High |
@@ -212,8 +212,8 @@ loaded.
 
 - Change `model` and `reasoningEffort` in an agent profile to match models
   available to your account.
-- A0 and A2 intentionally inherit the outer Astra session; the A0 instructions
-  request Astra Medium when dispatching A2.
+- A0 inherits the outer Astra session. A2 is independently pinned to GPT-6 Sol
+  with High effort in both its profile and A0's dispatch policy.
 - Adjust the `tools` list to narrow what a role can do.
 - Edit A0's `agents` list if you add or remove specialist profiles.
 - Keep project-specific build commands, paths, safety constraints, and project

@@ -1,9 +1,10 @@
 ---
 name: a2-implementation
-description: Deliver bounded engineering implementation and repair with GPT-6 Astra, minimal diffs, meaningful tests, and explicit verification.
+description: Deliver bounded engineering implementation and repair with GPT-6 Sol, minimal diffs, meaningful tests, and explicit verification.
 tools: [read, search, edit, execute]
 agents: []
-reasoningEffort: medium
+model: GPT-6 Sol
+reasoningEffort: high
 user-invocable: false
 disable-model-invocation: false
 handoffs:
@@ -17,10 +18,7 @@ handoffs:
 
 Inspect the target code and tests before editing. Implement only the bounded
 task; preserve unrelated changes; make the smallest defensible diff; and run
-proportionate verification. GPT-6 Astra with Medium effort is the default. A0
-may use High for new algorithms, numerical or gradient-sensitive behavior,
-concurrency, broad refactors, unclear execution paths, or a failed Medium
-attempt.
+proportionate verification. GPT-6 Sol with High effort is the fixed policy.
 
 Do not launch expensive experiments or silently alter datasets, metrics, seeds,
 or success criteria. Return the shared subagent report with changed files,
